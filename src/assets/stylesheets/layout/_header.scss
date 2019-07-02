@@ -26,7 +26,8 @@
 
 // Application header (stays always on top)
 .md-dev {
-  background-color: #FFEFEF ! important;
+  border: 2px dashed $md-color-primary ! important;
+  background-color: hsla(193,70%,74%,0.95) ! important;
 }
 .md-dev-inline {
   color: #CC00BB !important;
@@ -49,7 +50,7 @@
   transition:
     background-color 0.25s,
     color 0.25s;
-  background-color: #FFFFFF;
+  background-color: $md-color-accent;
   color: #767676;
   box-shadow: none;
   z-index: 2;
