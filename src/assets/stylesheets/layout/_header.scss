@@ -50,7 +50,7 @@
   transition:
     background-color 0.25s,
     color 0.25s;
-  background-color: $md-color-accent;
+  background-color: hsla(193,70%,74%,0.95) ! important;
   color: #767676;
   box-shadow: none;
   z-index: 2;
