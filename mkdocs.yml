@@ -81,7 +81,6 @@ plugins:
 # Page tree
 nav:
   - Material: index.md
-  - Getting started: getting-started.md
   - Extensions:
     - Admonition: extensions/admonition.md
     - CodeHilite: extensions/codehilite.md
@@ -94,7 +93,6 @@ nav:
   - Compliance with GDPR: compliance.md
   - Release notes: release-notes.md
   - Author's notes: authors-notes.md
-  - Contributing: contributing.md
   - License: license.md
 
 # Google Analytics
