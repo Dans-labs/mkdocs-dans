@@ -14,13 +14,15 @@ because, after all, it is a specialization for a specific organization.
 Most of the documentation has been written by Martin Donath, but I have simplified
 and adapted his material for the purposes at hand.
 
-[![Material for MkDocs](assets/images/material.png)](assets/images/material.png)
+[![Material for MkDocs](images/danstheme.png)](images/danstheme.png)
 
   [1]: https://www.mkdocs.org
   [2]: https://material.io/guidelines/material-design/
   [3]: https://squidfunk.github.io/mkdocs-material/
 
 ## Prerequisites
+
+### System
 
 Python 3.4 or higher.
 Node 6 or higher.
@@ -29,11 +31,24 @@ Node 6 or higher.
 pip3 install mkdocs
 pip3 install pygments
 pip3 install pymdown-extensions
+pip3 install pyyaml
 ```
 
 Basic familiarity with the
 [MkDocs](https://www.mkdocs.org)
 generator of static pages from Markdown.
+
+### Project
+
+Your project has a top-level folder named `docs`,
+in which a family of Markdown, HTML, and image files lives.
+
+At the top-level of your project, *next to* `docs`, there is a file
+`mkdocs.yml` with settings for mkdocs and settings for this theme.
+
+You can use
+[mkdocs.yml](https://github.com/Dans-labs/mkdocs-dans/blob/master/mkdocs.yml)
+as an example.
 
 ## Quick start
 
@@ -77,6 +92,8 @@ theme:
   development_label: under development
   production_link: https://dans.knaw.nl/en
 ```
+
+The paths for `logo` and `favicon` are relative the `docs` directory.
 
 The `development` flag produces a layout that reminds the user that your documentation
 is still `under develoment` (if you want to put that differently, use
@@ -125,7 +142,7 @@ For optimal navigation, customize your
 [navigation interface](https://www.mkdocs.org/#adding-pages)
 by means of the `nav` variable in your `mkdocs.yml`.
 
-If you link to external links, consider abbreviating those links in your
+If you have external links, consider abbreviating those links in your
 `mkdocs.yaml`. 
 Two advantages:
 
