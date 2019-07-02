@@ -21,8 +21,8 @@
 # Project information
 site_name: Material for MkDocs customised for DANS
 site_description: A Material Design theme for MkDocs customised for DANS
-site_author: Martin Donath, customised by Dirk Roorda
 site_url: https://Dans-labs.github.io/mkdocs-dans/
+site_author: Martin Donath, customised by Dirk Roorda
 
 # Repository
 repo_name: Dans-labs/mkdocs-dans
@@ -74,7 +74,6 @@ markdown_extensions:
 
 # Plugins
 plugins:
-  - markdownextradata
   - search
   - minify:
       minify_html: true
