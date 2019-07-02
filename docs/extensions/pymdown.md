@@ -9,11 +9,8 @@ with the Material theme.
 
 ## Installation
 
-The PyMdown Extensions package can be installed with the following command:
-
-``` sh
-pip install pymdown-extensions
-```
+If you have followed the [prerequisites](../index.md#prerequisites),
+the PyMdown Extensions package has been installed.
 
 The following list of extensions that are part of the PyMdown Extensions
 package are recommended to be used together with the Material theme:

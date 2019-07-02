@@ -1,14 +1,18 @@
-# DANS theme <small>for MkDocs</small> based on "Material"
+# DANS MkDocs theme"
 
-## Create beautiful project documentation
+## Write optimal documentation in DANS style
 
-Material is a theme for [MkDocs][1], an excellent static site generator geared
+"Material" is a theme for [MkDocs][1], an excellent static site generator geared
 towards project documentation. It is built using Google's [Material Design][2]
 guidelines.
 This theme has been implemented for MkDocs by [Martin Donath][3] in such a way that it can
 be tweaked and rebuilt and redistributed.
 That is exactly what I have done to create a DANS theme for MkDocs documentation.
+It can still be tweaked further, but I have made it less customizable, 
+because, after all, it is a specialization for a specific organization.
 
+Most of the documentation has been written by Martin Donath, but I have simplified
+and adapted his material for the purposes at hand.
 
 [![Material for MkDocs](assets/images/material.png)](assets/images/material.png)
 
@@ -16,14 +20,30 @@ That is exactly what I have done to create a DANS theme for MkDocs documentation
   [2]: https://material.io/guidelines/material-design/
   [3]: https://squidfunk.github.io/mkdocs-material/
 
+## Prerequisites
+
+Python 3.4 or higher.
+Node 6 or higher.
+
+``` sh
+pip3 install mkdocs
+pip3 install pygments
+pip3 install pymdown-extensions
+```
+
+Basic familiarity with the
+[MkDocs](https://www.mkdocs.org)
+generator of static pages from Markdown.
+
 ## Quick start
 
-The DANS theme is not available on PyPi.
+The DANS theme is not available on PyPI.
 In order to get it and use it, you have to clone the github directory
 to your own computer:
 
 
 ``` sh
+cd ~/github/Dans-labs
 git clone https://github.com/Dans-labs/mkdocs-dans
 ```
 
@@ -79,6 +99,50 @@ theme should be visible. From here on, you can start writing your documentation,
 or read on and customize the theme.
 
   [9]: http://localhost:8000
+
+
+You can also just build:
+
+``` sh
+mkdocs build
+```
+
+And you can deploy to GitHub pages of the project's repository:
+
+``` sh
+mkdocs gh-deploy
+```
+
+## Writing Markdown
+
+A number of very convenient Markdown extensions are enabled. 
+Navigate to them via *Extensions*, e.g.
+[Admonition](extensions/admonition.md).
+
+## Tips
+
+For optimal navigation, customize your
+[navigation interface](https://www.mkdocs.org/#adding-pages)
+by means of the `nav` variable in your `mkdocs.yml`.
+
+If you link to external links, consider abbreviating those links in your
+`mkdocs.yaml`. 
+Two advantages:
+
+1.  if you use a link multiple times, you can just use the same short abbreviation
+2.  easier to maintain the external links in your docs, should they become broken and
+    in need for updates.
+
+## Feedback
+
+I have made some simplifications, and maybe I have not covered all aspects of the theme.
+Maybe I have got the DANS styles wrong.
+
+File an
+[issue](https://github.com/Dans-labs/mkdocs-dans/issues)
+or submit a 
+[pull request](https://github.com/Dans-labs/mkdocs-dans/pulls)
+if you have improvements.
 
 ## What to expect
 
