@@ -41,18 +41,6 @@ theme:
 
 strict: false
 
-# Customization
-extra:
-  social:
-    - type: globe
-      link: http://struct.cc
-    - type: github-alt
-      link: https://github.com/squidfunk
-    - type: twitter
-      link: https://twitter.com/squidfunk
-    - type: linkedin
-      link: https://linkedin.com/in/squidfunk
-
 # Extensions
 markdown_extensions:
   - markdown.extensions.admonition
