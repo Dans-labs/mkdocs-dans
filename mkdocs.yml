@@ -34,44 +34,12 @@ copyright: 'Copyright &copy; 2016 - 2019 Martin Donath'
 
 # Configuration
 theme:
-  name: null
-  custom_dir: dans
+  name: dans
+  development: true
+  development_label: under development
+  production_link: https://dans.knaw.nl/en
 
-  # 404 page
-  static_templates:
-    - 404.html
-
-  # Don't include MkDocs' JavaScript
-  include_search_page: false
-  search_index_only: true
-
-  # Default values, taken from mkdocs_theme.yml
-  language: en
-  feature:
-    tabs: false
-  palette:
-    primary: 
-    accent:
-  font:
-    text: Open Sans
-    head: Glegoo
-    code: Ubuntu Mono
-  favicon: assets/images/favicon.png
-  logo:
-    icon: "\uE80C"
-
-  institute:
-    url: 'https://dans.knaw.nl/en'
-    name: Data Archiving and Networked Services (DANS)
-    logo: images/DANS.png
-
-  status: development
-
-# Plugins
-plugins:
-  - search
-  - minify:
-      minify_html: true
+strict: false
 
 # Customization
 extra:
@@ -115,6 +83,13 @@ markdown_extensions:
   - pymdownx.tasklist:
       custom_checkbox: true
   - pymdownx.tilde
+
+# Plugins
+plugins:
+  - markdownextradata
+  - search
+  - minify:
+      minify_html: true
 
 # Page tree
 nav:
