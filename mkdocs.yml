@@ -1,4 +1,4 @@
-site_name: Material for MkDocs customised for DANS
+site_name: MkDocs DANS
 site_description: A Material Design theme for MkDocs customised for DANS
 site_url: https://Dans-labs.github.io/mkdocs-dans/
 site_author: Martin Donath, customised by Dirk Roorda
@@ -14,6 +14,8 @@ theme:
   development: true
   development_label: under development
   production_link: https://dans.knaw.nl/en
+  feature:
+    tabs: false
 
 strict: false
 
@@ -57,7 +59,7 @@ plugins:
 
 # Page tree
 nav:
-  - Material: index.md
+  - DANS theme: index.md
   - Extensions:
     - Admonition: extensions/admonition.md
     - CodeHilite: extensions/codehilite.md

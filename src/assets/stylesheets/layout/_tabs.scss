@@ -29,7 +29,8 @@
   width: 100%;
   transition: background 0.25s;
   background-color: $md-color-primary;
-  color: $md-color-white;
+  background-color: hsla(193,70%,90%,1.0);
+  color: $md-color-black;
   overflow: auto;
 
   // [tablet -]: Hide tabs for tablet and below, as they don't make any sense
@@ -54,7 +55,7 @@
   // List item
   &__item {
     display: inline-block;
-    height: px2rem(48px);
+    height: px2rem(32px);
     padding-right: px2rem(12px);
     padding-left: px2rem(12px);
   }
@@ -63,7 +64,7 @@
   // line height, but this would imply more repaints when scrolling
   &__link {
     display: block;
-    margin-top: px2rem(16px);
+    margin-top: px2rem(12px);
     transition:
       transform 0.4s cubic-bezier(0.1, 0.7, 0.1, 1),
       opacity   0.25s;
@@ -82,22 +83,6 @@
       .md-tabs__item:nth-child(#{$i}) & {
         transition-delay: 0.02s * ($i - 1);
       }
-    }
-  }
-
-  // Fade-out tabs background upon scrolling
-  &[data-md-state="hidden"] {
-    pointer-events: none;
-
-    // Hide tabs upon scrolling - disable transition to minimizes repaints whilte
-    // scrolling down, while scrolling up seems to be okay
-    .md-tabs__link {
-      transform: translateY(50%);
-      transition:
-        color     0.25s,
-        transform 0s 0.4s,
-        opacity   0.1s;
-      opacity: 0;
     }
   }
 

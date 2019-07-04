@@ -28,7 +28,7 @@ python3 build.py g commitmsg
 `pack` installs the DANS theme as a module.
 `make` builds the DANS theme from the source files and installs it as a module.
 
-`docs` does `make` and then serves the theme documentation
+`docs` serves the theme documentation (without make)
 
 `g` does `make`, and pushes the theme repo site to GitHub,
 where it will be published under <https://dans-labs.github.io/mkdocs-dans/>.
@@ -141,8 +141,7 @@ def main():
   elif task == 'make':
     makeCustom()
   elif task == 'docs':
-    if makeCustom():
-      serveDocs()
+    serveDocs()
   elif task == 'g':
     if makeCustom():
       shipDocs()

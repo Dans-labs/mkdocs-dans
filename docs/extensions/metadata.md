@@ -9,15 +9,6 @@ which gives more control over the theme in a page-specific context.
 
   [1]: https://python-markdown.github.io/extensions/meta_data/
 
-## Installation
-
-Add the following lines to your `mkdocs.yml`:
-
-``` yaml
-markdown_extensions:
-  - meta
-```
-
 ## Usage
 
 Metadata is written as a series of key-value pairs at the beginning of the

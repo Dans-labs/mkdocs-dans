@@ -14,6 +14,8 @@ because, after all, it is a specialization for a specific organization.
 Most of the documentation has been written by Martin Donath, but I have simplified
 and adapted his material for the purposes at hand.
 
+See also the [authors-notes](authors-notes.md).
+
 [![Material for MkDocs](images/danstheme.png)](images/danstheme.png)
 
   [1]: https://www.mkdocs.org
@@ -25,7 +27,6 @@ and adapted his material for the purposes at hand.
 ### System
 
 Python 3.4 or higher.
-Node 6 or higher.
 
 ``` sh
 pip3 install mkdocs
@@ -41,19 +42,25 @@ generator of static pages from Markdown.
 ### Project
 
 Your project has a top-level folder named `docs`,
-in which a family of Markdown, HTML, and image files lives.
+containing a family of Markdown, HTML, and image files.
 
 At the top-level of your project, *next to* `docs`, there is a file
 `mkdocs.yml` with settings for mkdocs and settings for this theme.
 
-You can use
+```
+~/github/docs/index.md
+        |    / files and subdirectories
+        /mkdocs.yml
+```
+
+You can use the
 [mkdocs.yml](https://github.com/Dans-labs/mkdocs-dans/blob/master/mkdocs.yml)
-as an example.
+of the documentation you are reading now as an example.
 
 ## Quick start
 
 The DANS theme is not available on PyPI.
-In order to get it and use it, you have to clone the github directory
+In order to get it and use it, you have to clone its GitHub repo
 to your own computer:
 
 
@@ -62,11 +69,15 @@ cd ~/github/Dans-labs
 git clone https://github.com/Dans-labs/mkdocs-dans
 ```
 
+??? info "~/github"
+    The place where your cloned repository resides on your
+    own computer is immaterial. `~/github` is just an example.
+
 From there, you build the theme as follows:
 
 ``` sh
 cd mkdocs-dans
-python3 build.py make
+python3 build.py pack
 ```
 
 This will install the theme locally on your computer in the place where
@@ -91,16 +102,25 @@ theme:
   development: true
   development_label: under development
   production_link: https://dans.knaw.nl/en
+  feature:
+    tabs: false
 ```
 
-The paths for `logo` and `favicon` are relative the `docs` directory.
+The paths for `logo` and `favicon` are relative to the `docs` directory.
 
 The `development` flag produces a layout that reminds the user that your documentation
 is still `under develoment` (if you want to put that differently, use
 `development_label`).
-If that is the case, you can point to the docs in their production version by means of
+In that case, you can point to the production docs by means of
 `production_link`.
 
+If you have a large set of pages, you might want to put the first level of navigation
+in a horizontal line of tabs.
+For that, set
+
+```
+    tabs: true
+```
 
 ## Usage
 
@@ -111,20 +131,20 @@ The development server can be started with the following command:
 mkdocs serve
 ```
 
-Now you can point your browser to [http://localhost:8000][9] and the Material
-theme should be visible. From here on, you can start writing your documentation,
-or read on and customize the theme.
+Now you can point your browser to [http://localhost:8000][9] where the docs
+will be served. From here on, you can start writing and editing your documentation.
+Every time you save a documentation file, the docs will be reloaded.
 
   [9]: http://localhost:8000
 
 
-You can also just build:
+You can also just build the docs without serving them:
 
 ``` sh
 mkdocs build
 ```
 
-And you can deploy to GitHub pages of the project's repository:
+And you can deploy the docs to the GitHub pages of the project's repository:
 
 ``` sh
 mkdocs gh-deploy
@@ -168,8 +188,8 @@ if you have improvements.
   languages with optimal readability.
 
 * Easily customizable favicon and logo;
-  straight forward localization through theme extension; integrated with Google
-  Analytics, Disqus and GitHub.
+  straight forward localization through theme extension;
+  integrated GitHub.
 
 * Well-designed search interface accessible through hotkeys (<kbd>F</kbd> or
   <kbd>S</kbd>), intelligent grouping of search results, search term

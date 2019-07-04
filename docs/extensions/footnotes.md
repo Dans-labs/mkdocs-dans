@@ -5,15 +5,6 @@ As the name says, it adds the ability to add footnotes to your documentation.
 
   [1]: https://python-markdown.github.io/extensions/footnotes/
 
-## Installation
-
-Add the following lines to your `mkdocs.yml`:
-
-``` yaml
-markdown_extensions:
-  - footnotes
-```
-
 ## Usage
 
 The markup for footnotes is similar to the standard Markdown markup for links.

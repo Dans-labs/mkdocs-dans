@@ -7,27 +7,6 @@ document.
 
   [1]: https://python-markdown.github.io/extensions/toc/
 
-## Installation
-
-To enable permalinks, add the following to your `mkdocs.yml`:
-
-``` yaml
-markdown_extensions:
-  - toc:
-      permalink: true
-```
-
-This will add a link containing the paragraph symbol `¶` at the end of each
-headline (exactly like on the page you're currently viewing), which the
-Material theme will make appear on hover. In order to change the text of the
-permalink, a string can be passed, e.g.:
-
-``` markdown
-markdown_extensions:
-  - toc:
-      permalink: Link
-```
-
 ## Usage
 
 When enabled, permalinks are inserted automatically.

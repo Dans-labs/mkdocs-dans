@@ -6,15 +6,6 @@ example summaries, notes, hints or warnings.
 
   [1]: https://python-markdown.github.io/extensions/admonition/
 
-## Installation
-
-Add the following lines to your `mkdocs.yml`:
-
-``` yaml
-markdown_extensions:
-  - admonition
-```
-
 ## Usage
 
 Admonition blocks follow a simple syntax: every block is started with `!!!`,

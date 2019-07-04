@@ -7,8 +7,6 @@ with the Material theme.
 
   [1]: http://facelessuser.github.io/pymdown-extensions/
 
-## Installation
-
 If you have followed the [prerequisites](../index.md#prerequisites),
 the PyMdown Extensions package has been installed.
 
