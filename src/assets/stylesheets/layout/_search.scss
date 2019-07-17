@@ -274,7 +274,7 @@ $md-toggle__search--checked:
         background-color 0.25s cubic-bezier(0.1, 0.7, 0.1, 1),
         color            0.25s cubic-bezier(0.1, 0.7, 0.1, 1);
       border-radius: px2rem(2px);
-      background-color: $md-color-black--lighter;
+      background-color: $md-color-white--lightest;
       color: inherit;
       font-size: ms(0);
 
@@ -290,12 +290,15 @@ $md-toggle__search--checked:
 
       // Placeholder color
       &::placeholder {
-        color: $md-color-white--light;
+
+        /* color: $md-color-white--light; */
+        color: $dans-color-medium;
       }
 
       // Hovered search field
       &:hover {
-        background-color: $md-color-white--lightest;
+        background-color: $md-color-white;
+        color: $dans-color-medium;
       }
 
       // Set light background on active search field
@@ -326,7 +329,7 @@ $md-toggle__search--checked:
 
     // Hovered icon
     &:hover {
-      opacity: 0.7;
+      opacity: 0.4;
     }
 
     // Search icon
@@ -392,7 +395,7 @@ $md-toggle__search--checked:
 
         // Hovered icon
         &:hover {
-          opacity: 0.7;
+          opacity: 0.4;
         }
       }
     }

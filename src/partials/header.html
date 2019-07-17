@@ -22,12 +22,12 @@
 
 {% macro dev() -%}
   {% if config.theme.development %}
-    <span class="md-dev-inline">
+    <span class="md-dev-inline head-type">
       {{ config.theme.development_label }}
     {% if config.theme.production_link %}
       : <a href="{{ config.theme.production_link }}"
          title="to the production version of this page"
-         class="md-dev-link"
+         class="md-dev-link head-type"
          target="_blank"
       >to production</a>
     {% endif %}
@@ -47,12 +47,12 @@
   <nav class="md-header-nav md-grid">
     <div class="md-flex">
 
-      <!-- Link to institure -->
+      <!-- Link to client -->
       <div class="md-flex__cell md-flex__cell--shrink">
-        <a href="{{ config.theme.institute.url | default(nav.homepage.url, true) | url }}"
-            title="{{ config.theme.institute.name }}"
+        <a href="{{ config.theme.client.url | default(nav.homepage.url, true) | url }}"
+            title="{{ config.theme.client.name }}"
             class="md-header-nav__button md-logo">
-          <img src="{{ config.theme.institute.logo | url }}" height="50" />
+          <img src="{{ config.theme.client.logo | url }}" height="50" />
         </a>
       </div>
       <!-- Link to home -->
@@ -76,7 +76,7 @@
 
       <!-- Header title -->
       <div class="md-flex__cell md-flex__cell--stretch">
-        <div class="md-flex__ellipsis md-header-nav__title"
+        <div class="md-flex__ellipsis md-header-nav__title head-type"
             data-md-component="title">
           {% if config.site_name == page.title %}
           <span>

@@ -28,8 +28,7 @@
 .md-tabs {
   width: 100%;
   transition: background 0.25s;
-  background-color: $md-color-primary;
-  background-color: hsla(193,70%,90%,1.0);
+  background-color: $dans-color-back;
   color: $md-color-black;
   overflow: auto;
 
@@ -55,7 +54,6 @@
   // List item
   &__item {
     display: inline-block;
-    height: px2rem(32px);
     padding-right: px2rem(12px);
     padding-left: px2rem(12px);
   }
@@ -65,9 +63,12 @@
   &__link {
     display: block;
     margin-top: px2rem(12px);
+    padding: 0 px2rem(6px) 0 px2rem(6px);
     transition:
       transform 0.4s cubic-bezier(0.1, 0.7, 0.1, 1),
       opacity   0.25s;
+    border-radius: px2rem(6px) px2rem(6px) 0 0;
+    background-color: $dans-color-tab;
     font-size: px2rem(14px);
     opacity: 0.7;
 

@@ -14,6 +14,11 @@ theme:
   development: true
   development_label: under development
   production_link: https://dans.knaw.nl/en
+  client:
+    name: Data Archiving and Networked Services (DANS)
+    url: 'https://dans.knaw.nl/en'
+    logo: assets/images/DANS.gif
+
   feature:
     tabs: false
 

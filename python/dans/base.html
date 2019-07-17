@@ -47,7 +47,7 @@
         <meta name="lang:{{ key }}" content="{{ lang.t(key) }}">
       {% endfor %}
       <link rel="shortcut icon" href="{{ config.theme.favicon | url }}">
-      <meta name="generator" content="mkdocs-{{ mkdocs_version }}, mkdocs-dans-4.4.0">
+      <meta name="generator" content="mkdocs-{{ mkdocs_version }}, mkdocs-dans-4.4.1">
     {% endblock %}
     {% block htmltitle %}
       {% if page and page.meta and page.meta.title %}
@@ -59,9 +59,9 @@
       {% endif %}
     {% endblock %}
     {% block styles %}
-      <link rel="stylesheet" href="{{ 'assets/stylesheets/application.f08c3f5e.css' | url }}">
+      <link rel="stylesheet" href="{{ 'assets/stylesheets/application.b28fc32d.css' | url }}">
       {% if palette.primary or palette.accent %}
-        <link rel="stylesheet" href="{{ 'assets/stylesheets/application-palette.8f03430c.css' | url }}">
+        <link rel="stylesheet" href="{{ 'assets/stylesheets/application-palette.5c76b3d6.css' | url }}">
       {% endif %}
       {% if palette.primary %}
         {% import "partials/palette.html" as map %}
@@ -81,7 +81,7 @@
               font.head | replace(' ', '+') + ':300,400,400i,700|' +
               font.code | replace(' ', '+')
             }}&display=swap">
-        <style>body,input{font-family:"{{ font.text }}",sans-serif}h1,h2,h3,h4,h5{font-family:"{{ font.head }}",serif}code,kbd,pre{font-family:"{{ font.code }}",monospace}</style>
+        <style>.body-type,body,input{font-family:"{{ font.text }}",sans-serif}.head-type,h1,h2,h3,h4,h5{font-family:"{{ font.head }}",serif}.code-type,code,kbd,pre{font-family:"{{ font.code }}",monospace}</style>
       {% endif %}
     {% endblock %}
     <link rel="stylesheet" href="{{ 'assets/fonts/material-icons.css' | url }}">
@@ -196,7 +196,7 @@
       {% endblock %}
     </div>
     {% block scripts %}
-      <script src="{{ 'assets/javascripts/application.48e0327a.js' | url }}"></script>
+      <script src="{{ 'assets/javascripts/application.6152a718.js' | url }}"></script>
       {% if lang.t("search.language") != "en" %}
         {% set languages = lang.t("search.language").split(",") %}
         {% if languages | length and languages[0] != "" %}

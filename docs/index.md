@@ -102,6 +102,11 @@ theme:
   development: true
   development_label: under development
   production_link: https://dans.knaw.nl/en
+  client:
+    name: Data Archiving and Networked Services (DANS)
+    url: 'https://dans.knaw.nl/en'
+    logo: assets/images/DANS.gif
+
   feature:
     tabs: false
 ```
@@ -113,6 +118,10 @@ is still `under develoment` (if you want to put that differently, use
 `development_label`).
 In that case, you can point to the production docs by means of
 `production_link`.
+
+The `client` setting places the logo of the client for which the project is done
+in the top bar. If the client is DANS, you do not have to pass this setting,
+because the default values draw in the DANS logo.
 
 If you have a large set of pages, you might want to put the first level of navigation
 in a horizontal line of tabs.

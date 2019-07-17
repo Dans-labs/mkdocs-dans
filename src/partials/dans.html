@@ -1,4 +1,21 @@
 <div class="md-footer-dans">
-  <span>DANS is an institute of KNAW and NWO<span>
-  <img src="{{ config.theme.institute.logo2 | url }}" height="50" />
+  <div>DANS is an institute of KNAW and NWO</div>
+  <div>
+    <a href="{{ config.theme.institute.url | default(nav.homepage.url, true) | url }}"
+        title="{{ config.theme.institute.name }}"
+    ><img
+        class="md-footer-dans__img"
+        src="{{ config.theme.institute.logo | url }}"
+        height="50"
+    /></a>
+    <a
+      target="_blank"
+      href="{{ config.theme.institute.url2 | url}}"
+    ><img src="{{ config.theme.institute.logo2 | url }}" height="50" /></a>
+    <a
+      target="_blank"
+      href="{{ config.theme.institute.url3 | url}}"
+    ><img src="{{ config.theme.institute.logo3 | url }}" height="50" /></a>
+  </div>
+  <div><i>Driven by data</i></div>
 </div>

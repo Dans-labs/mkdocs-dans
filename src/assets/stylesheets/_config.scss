@@ -25,7 +25,7 @@
 // ----------------------------------------------------------------------------
 
 // Modular typographic scale
-$ms-base: px2rem(15px);
+$ms-base: px2rem(13px);
 $ms-ratio: $major-third;
 
 // ----------------------------------------------------------------------------
@@ -62,9 +62,17 @@ $break-devices: (
 //$md-color-accent:                     $clr-teal-a200 !default;
 $md-color-primary:                    #DC2A1F;
 $md-color-accent:                     #04AEDC;
+$dans-color-monoback:                 #F0F0FA;
+$dans-color-back:                     hsla(193, 70%, 90%, 0.95);
+$dans-color-tab:                      hsla(193, 70%, 70%, 1.0);
+$dans-color-light:                    #CDCDCD;
+$dans-color-medium:                   #767676;
+$dans-color-dark:                     #232323;
+$dans-theme-dev:                      #CC00BB;
+$dans-theme-dev-link:                 #000088;
 
 // Shades of black
-$md-color-black:                      hsla(0, 0%, 0%, 0.87) !default;
+$md-color-black:                      hsla(0, 0%, 0%, 1) !default;
 $md-color-black--light:               hsla(0, 0%, 0%, 0.54) !default;
 $md-color-black--lighter:             hsla(0, 0%, 0%, 0.26) !default;
 $md-color-black--lightest:            hsla(0, 0%, 0%, 0.07) !default;

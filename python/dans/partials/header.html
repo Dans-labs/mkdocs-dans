@@ -3,10 +3,10 @@
 -#}
 {% macro dev() -%}
   {% if config.theme.development %}
-    <span class="md-dev-inline">
+    <span class="md-dev-inline head-type">
       {{ config.theme.development_label }}
     {% if config.theme.production_link %}
-      : <a href="{{ config.theme.production_link }}" title="to the production version of this page" class="md-dev-link" target="_blank">to production</a>
+      : <a href="{{ config.theme.production_link }}" title="to the production version of this page" class="md-dev-link head-type" target="_blank">to production</a>
     {% endif %}
     </span>
   {% endif %}
@@ -19,8 +19,8 @@
   <nav class="md-header-nav md-grid">
     <div class="md-flex">
       <div class="md-flex__cell md-flex__cell--shrink">
-        <a href="{{ config.theme.institute.url | default(nav.homepage.url, true) | url }}" title="{{ config.theme.institute.name }}" class="md-header-nav__button md-logo">
-          <img src="{{ config.theme.institute.logo | url }}" height="50">
+        <a href="{{ config.theme.client.url | default(nav.homepage.url, true) | url }}" title="{{ config.theme.client.name }}" class="md-header-nav__button md-logo">
+          <img src="{{ config.theme.client.logo | url }}" height="50">
         </a>
       </div>
       <div class="md-flex__cell md-flex__cell--shrink">
@@ -36,7 +36,7 @@
         <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
       </div>
       <div class="md-flex__cell md-flex__cell--stretch">
-        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+        <div class="md-flex__ellipsis md-header-nav__title head-type" data-md-component="title">
           {% if config.site_name == page.title %}
           <span>
             {{ config.site_name }}

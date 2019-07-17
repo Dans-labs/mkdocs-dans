@@ -22,12 +22,16 @@
 
 <!-- Social links in footer -->
 {% if config.theme.social %}
-  <div class="md-footer-social">
-    <link rel="stylesheet" type="text/css"
-        href="{{ 'assets/fonts/font-awesome.css' | url }}" />
+  <link rel="stylesheet" type="text/css"
+      href="{{ 'assets/fonts/font-awesome.css' | url }}" />
+  <ul class="md-footer-social">
     {% for social in config.theme.social %}
+    <li class="md-footer-social__li">
       <a href="{{ social.link }}" class="md-footer-social__link
-            fa fa-{{ social.type }}"></a>
+            fa fa-{{ social.type }}-square">
+        <span class="md-footer-social__desc">{{ social.desc }}</span>
+      </a>
+    </li>
     {% endfor %}
   </div>
 {% endif %}

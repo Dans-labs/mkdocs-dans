@@ -25,19 +25,19 @@
 // ----------------------------------------------------------------------------
 
 // Application header (stays always on top)
-.md-dev {
-  border: 2px dashed $md-color-primary ! important;
-  background-color: hsla(193,70%,74%,0.95) ! important;
+
+/* .md-dev {
 }
+*/
 .md-dev-inline {
-  color: #CC00BB !important;
-  font-family: Glegoo, serif !important;
+  border: 2px dashed $md-color-primary ! important;
+  background-color: $dans-color-back ! important;
+  color: $dans-theme-dev !important;
   font-size: smaller;
   font-weight: 700 !important;
 }
 .md-dev-link {
-  color: #000088 !important;
-  font-family: Glegoo, serif !important;
+  color: $dans-theme-dev-link !important;
   font-size: smaller;
   font-weight: 700 !important;
 }
@@ -50,8 +50,8 @@
   transition:
     background-color 0.25s,
     color 0.25s;
-  background-color: hsla(193,70%,74%,0.95) ! important;
-  color: #767676;
+  background-color: $dans-color-back ! important;
+  color: $dans-color-dark;
   box-shadow: none;
   z-index: 2;
   // Hack: putting the header on the GPU avoids unnecessary repaints
@@ -207,9 +207,6 @@
       }
     }
   }
-  &__dev {
-      color: #AA0000;
-  }
 
   // Repository containing source
   &__source {
@@ -221,6 +218,7 @@
       width: px2rem(234px);
       max-width: px2rem(234px);
       padding-right: px2rem(12px);
+      color: $dans-color-medium;
 
       // Adjust for RTL languages
       [dir="rtl"] & {

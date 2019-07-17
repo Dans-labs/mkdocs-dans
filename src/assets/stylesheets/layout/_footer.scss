@@ -35,7 +35,7 @@
 
 // Navigation within footer
 .md-footer-nav {
-  background-color: hsla(193,70%,74%,0.95) ! important;
+  background-color: $dans-color-back ! important;
   color: $md-color-primary;
 
   // Set spacing
@@ -125,7 +125,7 @@
 
 // Non-navigational information
 .md-footer-meta {
-  background-color: #767676;
+  background-color: $dans-color-medium;
 
   // Set spacing
   &__inner {
@@ -154,7 +154,7 @@
 
   // [tablet portrait +]: Show next to social media links
   @include break-from-device(tablet portrait) {
-    max-width: 75%;
+    max-width: 50%;
     float: left;
 
     // Adjust for RTL languages
@@ -171,13 +171,15 @@
 
 // Social media links
 .md-footer-social {
-  margin: 0 px2rem(8px);
-  padding: px2rem(4px) 0 px2rem(12px);
+  margin: 0 ;
+  padding: 0 ;
+  color: $md-color-white;
+  list-style: none ! important;
 
   // [tablet portrait +]: Show next to copyright information
   @include break-from-device(tablet portrait) {
     padding: px2rem(12px) 0;
-    float: right;
+    float: left;
 
     // Adjust for RTL languages
     [dir="rtl"] & {
@@ -186,21 +188,29 @@
   }
 
   // Link with icon
+  &__li {
+    margin-top: px2rem(0px) ! important;
+    margin-bottom: px2rem(0px) ! important;
+    font-size: px2rem(20px);
+    line-height: 1.2 ! important;
+  }
+
+  &__desc {
+    font-size: px2rem(12px);
+  }
+
   &__link {
     display: inline-block;
-    width: px2rem(32px);
-    height: px2rem(32px);
-    color: #FFFFFF ! important;
-    font-size: px2rem(16px);
-    text-align: center;
-
-    // Adjust line-height to match height for correct alignment
-    &::before {
-      line-height: 1.9;
-    }
+    text-align: left;
   }
 }
 .md-footer-dans {
     float: right;
-    color: #FFFFFF ! important;
+    color: $md-color-white ! important;
+    font-size: px2rem(12px);
+
+  &__img {
+      border-radius: px2rem(4px);
+      background-color: $dans-color-light;
+  }
 }

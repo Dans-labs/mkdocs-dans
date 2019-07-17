@@ -184,7 +184,7 @@ module.exports = (_env, args) => { // eslint-disable-line complexity
         /* Copy images without cache busting */
         {
           context: "src",
-          from: "assets/images/*.{ico,png}"
+          from: "assets/images/*.{ico,png,gif}"
         },
 
         /* Copy configuration */
@@ -285,7 +285,7 @@ module.exports = (_env, args) => { // eslint-disable-line complexity
 
       /* Minify images */
       new ImageminPlugin({
-        test: /\.(ico|png|svg)$/i,
+        test: /\.(ico|png|svg|gif)$/i,
         svgo: {
           plugins: [
             { cleanupIDs: false },

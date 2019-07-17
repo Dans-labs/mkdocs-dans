@@ -55,11 +55,19 @@ font:
   # Fixed-width font for code listings
   code: Ubuntu Mono
 
-institute:
-  url: 'https://dans.knaw.nl/en'
+client:
   name: Data Archiving and Networked Services (DANS)
-  logo: assets/images/DANS.png
-  logo2: assets/images/knawnwo.png
+  url: 'https://dans.knaw.nl/en'
+  logo: assets/images/DANS.gif
+
+institute:
+  name: Data Archiving and Networked Services (DANS)
+  url: 'https://dans.knaw.nl/en'
+  url2: 'https://www.knaw.nl/en'
+  url3: 'https://www.nwo.nl/en'
+  logo: assets/images/DANS.gif
+  logo2: assets/images/knaw.png
+  logo3: assets/images/nwo.png
 
   development: true
   development_label: 'under development'
@@ -67,12 +75,16 @@ institute:
 
 social:
   - type: envelope
+    desc: Newsletter
     link: http://eepurl.com/dvnr8D
   - type: twitter
+    desc: Twitter
     link: https://twitter.com/DANSKNAW
   - type: youtube
+    desc: YouTube
     link: https://www.youtube.com/user/DANSDataArchiving
   - type: linkedin
+    desc: LinkedIn
     link: https://www.linkedin.com/company/dans
 
 # Favicon to be rendered

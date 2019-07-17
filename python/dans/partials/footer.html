@@ -7,7 +7,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         {% if page.previous_page %}
-          <a href="{{ page.previous_page.url | url }}" title="{{ page.previous_page.title }}" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="{{ page.previous_page.url | url }}" title="{{ page.previous_page.title }}" class="md-flex md-footer-nav__link md-footer-nav__link--prev head-type" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -19,7 +19,7 @@
           </a>
         {% endif %}
         {% if page.next_page %}
-          <a href="{{ page.next_page.url | url }}" title="{{ page.next_page.title }}" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="{{ page.next_page.url | url }}" title="{{ page.next_page.title }}" class="md-flex md-footer-nav__link md-footer-nav__link--next head-type" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 {{ page.next_page.title }}
@@ -49,8 +49,8 @@
         customised by
         <a href="https://github.com/Dans-labs">Dans-labs</a>
       </div>
-      {% include "partials/social.html" %}
       {% include "partials/dans.html" %}
+      {% include "partials/social.html" %}
     </div>
   </div>
 </footer>

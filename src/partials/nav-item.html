@@ -40,12 +40,12 @@
     {% endif %}
 
     <!-- Expand active pages -->
-    <label class="md-nav__link" for="{{ path }}">
+    <label class="md-nav__link head-type" for="{{ path }}">
       {{ nav_item.title }}
     </label>
     <nav class="md-nav" data-md-component="collapsible"
         data-md-level="{{ level }}">
-      <label class="md-nav__title" for="{{ path }}">
+      <label class="md-nav__title head-type" for="{{ path }}">
         {{ nav_item.title }}
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -77,12 +77,12 @@
 
     <!-- Render table of contents, if not empty -->
     {% if toc_ | first is defined %}
-      <label class="md-nav__link md-nav__link--active" for="__toc">
+      <label class="md-nav__link md-nav__link--active head-type" for="__toc">
         {{ nav_item.title }}
       </label>
     {% endif %}
     <a href="{{ nav_item.url | url }}" title="{{ nav_item.title | striptags }}"
-        class="md-nav__link md-nav__link--active">
+        class="md-nav__link md-nav__link--active head-type">
       {{ nav_item.title }}
     </a>
 
@@ -96,7 +96,7 @@
 {% else %}
   <li class="{{ class }}">
     <a href="{{ nav_item.url | url }}" title="{{ nav_item.title | striptags }}"
-        class="md-nav__link">
+        class="md-nav__link head-type">
       {{ nav_item.title }}
     </a>
   </li>
