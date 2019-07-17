@@ -5,7 +5,6 @@ site_author: Martin Donath, customised by Dirk Roorda
 
 repo_name: Dans-labs/mkdocs-dans
 repo_url: https://github.com/Dans-labs/mkdocs-dans
-edit_uri: ""
 
 theme:
   name: dans
