@@ -77,18 +77,26 @@
 
       <!-- Copyright and theme information -->
       <div class="md-footer-copyright">
-        {% if config.copyright %}
-          <div class="md-footer-copyright__highlight">
-            {{ config.copyright }}
-          </div>
-        {% endif %}
-        powered by
-        <a href="https://www.mkdocs.org">MkDocs</a>
-        and
-        <a href="https://squidfunk.github.io/mkdocs-material/">
-          Material for MkDocs</a>
-        customised by
-        <a href="https://github.com/Dans-labs">Dans-labs</a>
+        <div class="md-footer-disclaimer">
+            The content of this site is produced under
+           responsibility of project
+            <b>{{ config.repo_name }}</b>
+            and is subject to change.
+        </div>
+        <div>
+          {% if config.copyright %}
+            <div class="md-footer-copyright__highlight">
+              {{ config.copyright }}
+            </div>
+          {% endif %}
+          powered by
+          <a href="https://www.mkdocs.org">MkDocs</a>
+          and
+          <a href="https://squidfunk.github.io/mkdocs-material/">
+            Material for MkDocs</a>
+          customised by
+          <a href="https://github.com/Dans-labs">Dans-labs</a>
+        </div>
       </div>
 
       <!-- DANS links -->

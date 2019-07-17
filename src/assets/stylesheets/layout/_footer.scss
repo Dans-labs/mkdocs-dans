@@ -154,7 +154,7 @@
 
   // [tablet portrait +]: Show next to social media links
   @include break-from-device(tablet portrait) {
-    max-width: 50%;
+    max-width: 40%;
     float: left;
 
     // Adjust for RTL languages
@@ -167,6 +167,15 @@
   &__highlight {
     color: $md-color-white--light;
   }
+}
+
+.md-footer-disclaimer {
+    margin-bottom: px2rem(12px);
+    padding: px2rem(8px);
+    border-radius: px2rem(4px);
+    background-color: $dans-color-light;
+    color: $md-color-black;
+    font-size: px2rem(12px);
 }
 
 // Social media links
