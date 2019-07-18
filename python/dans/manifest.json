@@ -1,5 +1,5 @@
 {
-  "assets/javascripts/application.js": "assets/javascripts/application.5bceb883.js",
+  "assets/javascripts/application.js": "assets/javascripts/application.f780ca69.js",
   "assets/javascripts/modernizr.js": "assets/javascripts/modernizr.74668098.js",
   "404.html": "404.html",
   "__init__.py": "__init__.py",
@@ -24,7 +24,7 @@
   "assets/javascripts/lunr/tinyseg.js": "assets/javascripts/lunr/tinyseg.js",
   "assets/javascripts/lunr/wordcut.js": "assets/javascripts/lunr/wordcut.js",
   "assets/stylesheets/application-palette.css": "assets/stylesheets/application-palette.5c76b3d6.css",
-  "assets/stylesheets/application.css": "assets/stylesheets/application.679b0f7b.css",
+  "assets/stylesheets/application.css": "assets/stylesheets/application.27a306a7.css",
   "base.html": "base.html",
   "main.html": "main.html",
   "mkdocs_theme.yml": "mkdocs_theme.yml",

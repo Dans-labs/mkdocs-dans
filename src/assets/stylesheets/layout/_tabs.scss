@@ -73,8 +73,14 @@
     opacity: 0.7;
 
     // Active or hovered link
-    &--active,
+    &--active {
+      color: $md-color-primary ! important;
+      font-weight: 700; 
+      opacity: 1;
+    }
+
     &:hover {
+      background-color: $dans-color-light;
       color: inherit;
       opacity: 1;
     }
