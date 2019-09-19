@@ -109,6 +109,8 @@ theme:
 
   feature:
     tabs: false
+
+  disclaimer: false
 ```
 
 The paths for `logo` and `favicon` are relative to the `docs` directory.
@@ -127,8 +129,18 @@ If you have a large set of pages, you might want to put the first level of navig
 in a horizontal line of tabs.
 For that, set
 
-```
+``` yaml
     tabs: true
+```
+
+If `disclaimer` is true (which is the default), the footer shows a message
+that the docs have been produced as a product of a specific project, and that
+the material may be subject to change.
+
+You can suppress that message by 
+
+``` yaml
+    disclaimer: false
 ```
 
 ## Usage

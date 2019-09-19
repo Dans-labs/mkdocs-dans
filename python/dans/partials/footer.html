@@ -36,12 +36,14 @@
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
       <div class="md-footer-copyright">
+        {% if config.theme.disclaimer %}
         <div class="md-footer-disclaimer">
-            The content of this site is produced under
-           responsibility of project
-            <b>{{ config.repo_name }}</b>
-            and is subject to change.
+          The content of this site is produced under
+          responsibility of project
+          <b>{{ config.repo_name }}</b>
+          and is subject to change.
         </div>
+        {% endif %}
         <div>
           {% if config.copyright %}
             <div class="md-footer-copyright__highlight">

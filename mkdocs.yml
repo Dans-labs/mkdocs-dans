@@ -21,6 +21,8 @@ theme:
   feature:
     tabs: false
 
+  disclaimer: true
+
 strict: false
 
 markdown_extensions:

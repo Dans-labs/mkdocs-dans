@@ -87,6 +87,8 @@ social:
     desc: LinkedIn
     link: https://www.linkedin.com/company/dans
 
+disclaimer: true
+
 # Favicon to be rendered
 favicon: assets/images/favicon.png
 
