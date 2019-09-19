@@ -17,8 +17,8 @@ git clone https://github.com/Dans-labs/mkdocs-dans
 2</pre></div></td><td class=code><div class=codehilite><pre><span></span><span class=nb>cd</span> mkdocs-dans
 python3 build.py pack
 </pre></div> </td></tr></table> <p>This will install the theme locally on your computer in the place where Python modules live.</p> <p>Now, if you want to use this theme in a project, put this in the <code>mkdocs.yml</code> of that project:</p> <table class=codehilitetable><tr><td class=linenos><div class=linenodiv><pre><span></span>1
-2</pre></div></td><td class=code><div class=codehilite><pre><span></span><span class="l l-Scalar l-Scalar-Plain">theme</span><span class="p p-Indicator">:</span>
-  <span class="l l-Scalar l-Scalar-Plain">name</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">dans</span>
+2</pre></div></td><td class=code><div class=codehilite><pre><span></span><span class=nt>theme</span><span class=p>:</span>
+  <span class=nt>name</span><span class=p>:</span> <span class="l l-Scalar l-Scalar-Plain">dans</span>
 </pre></div> </td></tr></table> <p>You can tweak the way the theme behaves by means of a few parameters under <code>theme</code>, e.g. as follows:</p> <table class=codehilitetable><tr><td class=linenos><div class=linenodiv><pre><span></span> 1
  2
  3
@@ -32,21 +32,26 @@ python3 build.py pack
 11
 12
 13
-14</pre></div></td><td class=code><div class=codehilite><pre><span></span><span class="l l-Scalar l-Scalar-Plain">theme</span><span class="p p-Indicator">:</span>
-  <span class="l l-Scalar l-Scalar-Plain">name</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">dans</span>
-  <span class="l l-Scalar l-Scalar-Plain">logo</span><span class="p p-Indicator">:</span> <span class=s>&#39;images/test.png&#39;</span>
-  <span class="l l-Scalar l-Scalar-Plain">favicon</span><span class="p p-Indicator">:</span> <span class=s>&#39;images/test.png&#39;</span>
-  <span class="l l-Scalar l-Scalar-Plain">development</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">true</span>
-  <span class="l l-Scalar l-Scalar-Plain">development_label</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">under development</span>
-  <span class="l l-Scalar l-Scalar-Plain">production_link</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">https://dans.knaw.nl/en</span>
-  <span class="l l-Scalar l-Scalar-Plain">client</span><span class="p p-Indicator">:</span>
-    <span class="l l-Scalar l-Scalar-Plain">name</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">Data Archiving and Networked Services (DANS)</span>
-    <span class="l l-Scalar l-Scalar-Plain">url</span><span class="p p-Indicator">:</span> <span class=s>&#39;https://dans.knaw.nl/en&#39;</span>
-    <span class="l l-Scalar l-Scalar-Plain">logo</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">assets/images/DANS.gif</span>
+14
+15
+16</pre></div></td><td class=code><div class=codehilite><pre><span></span><span class=nt>theme</span><span class=p>:</span>
+  <span class=nt>name</span><span class=p>:</span> <span class="l l-Scalar l-Scalar-Plain">dans</span>
+  <span class=nt>logo</span><span class=p>:</span> <span class=s>&#39;images/test.png&#39;</span>
+  <span class=nt>favicon</span><span class=p>:</span> <span class=s>&#39;images/test.png&#39;</span>
+  <span class=nt>development</span><span class=p>:</span> <span class="l l-Scalar l-Scalar-Plain">true</span>
+  <span class=nt>development_label</span><span class=p>:</span> <span class="l l-Scalar l-Scalar-Plain">under development</span>
+  <span class=nt>production_link</span><span class=p>:</span> <span class="l l-Scalar l-Scalar-Plain">https://dans.knaw.nl/en</span>
+  <span class=nt>client</span><span class=p>:</span>
+    <span class=nt>name</span><span class=p>:</span> <span class="l l-Scalar l-Scalar-Plain">Data Archiving and Networked Services (DANS)</span>
+    <span class=nt>url</span><span class=p>:</span> <span class=s>&#39;https://dans.knaw.nl/en&#39;</span>
+    <span class=nt>logo</span><span class=p>:</span> <span class="l l-Scalar l-Scalar-Plain">assets/images/DANS.gif</span>
 
-  <span class="l l-Scalar l-Scalar-Plain">feature</span><span class="p p-Indicator">:</span>
-    <span class="l l-Scalar l-Scalar-Plain">tabs</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">false</span>
-</pre></div> </td></tr></table> <p>The paths for <code>logo</code> and <code>favicon</code> are relative to the <code>docs</code> directory.</p> <p>The <code>development</code> flag produces a layout that reminds the user that your documentation is still <code>under develoment</code> (if you want to put that differently, use <code>development_label</code>). In that case, you can point to the production docs by means of <code>production_link</code>.</p> <p>The <code>client</code> setting places the logo of the client for which the project is done in the top bar. If the client is DANS, you do not have to pass this setting, because the default values draw in the DANS logo.</p> <p>If you have a large set of pages, you might want to put the first level of navigation in a horizontal line of tabs. For that, set</p> <table class=codehilitetable><tr><td class=linenos><div class=linenodiv><pre><span></span>1</pre></div></td><td class=code><div class=codehilite><pre><span></span>    tabs: true
+  <span class=nt>feature</span><span class=p>:</span>
+    <span class=nt>tabs</span><span class=p>:</span> <span class="l l-Scalar l-Scalar-Plain">false</span>
+
+  <span class=nt>disclaimer</span><span class=p>:</span> <span class="l l-Scalar l-Scalar-Plain">false</span>
+</pre></div> </td></tr></table> <p>The paths for <code>logo</code> and <code>favicon</code> are relative to the <code>docs</code> directory.</p> <p>The <code>development</code> flag produces a layout that reminds the user that your documentation is still <code>under develoment</code> (if you want to put that differently, use <code>development_label</code>). In that case, you can point to the production docs by means of <code>production_link</code>.</p> <p>The <code>client</code> setting places the logo of the client for which the project is done in the top bar. If the client is DANS, you do not have to pass this setting, because the default values draw in the DANS logo.</p> <p>If you have a large set of pages, you might want to put the first level of navigation in a horizontal line of tabs. For that, set</p> <table class=codehilitetable><tr><td class=linenos><div class=linenodiv><pre><span></span>1</pre></div></td><td class=code><div class=codehilite><pre><span></span>    <span class=nt>tabs</span><span class=p>:</span> <span class="l l-Scalar l-Scalar-Plain">true</span>
+</pre></div> </td></tr></table> <p>If <code>disclaimer</code> is true (which is the default), the footer shows a message that the docs have been produced as a product of a specific project, and that the material may be subject to change.</p> <p>You can suppress that message by </p> <table class=codehilitetable><tr><td class=linenos><div class=linenodiv><pre><span></span>1</pre></div></td><td class=code><div class=codehilite><pre><span></span>    <span class=nt>disclaimer</span><span class=p>:</span> <span class="l l-Scalar l-Scalar-Plain">false</span>
 </pre></div> </td></tr></table> <h2 id=usage>Usage<a class=headerlink href=#usage title="Permanent link">&para;</a></h2> <p>MkDocs includes a development server, so you can review your changes as you go. The development server can be started with the following command:</p> <table class=codehilitetable><tr><td class=linenos><div class=linenodiv><pre><span></span>1</pre></div></td><td class=code><div class=codehilite><pre><span></span>mkdocs serve
 </pre></div> </td></tr></table> <p>Now you can point your browser to <a href=http://localhost:8000>http://localhost:8000</a> where the docs will be served. From here on, you can start writing and editing your documentation. Every time you save a documentation file, the docs will be reloaded.</p> <p>You can also just build the docs without serving them:</p> <table class=codehilitetable><tr><td class=linenos><div class=linenodiv><pre><span></span>1</pre></div></td><td class=code><div class=codehilite><pre><span></span>mkdocs build
 </pre></div> </td></tr></table> <p>And you can deploy the docs to the GitHub pages of the project's repository:</p> <table class=codehilitetable><tr><td class=linenos><div class=linenodiv><pre><span></span>1</pre></div></td><td class=code><div class=codehilite><pre><span></span>mkdocs gh-deploy

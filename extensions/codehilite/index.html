@@ -16,9 +16,9 @@ import tensorflow as tf
 </pre></div> </td></tr></table> <p>Result:</p> <table class=codehilitetable><tr><td class=linenos><div class=linenodiv><pre>1</pre></div></td><td class=code><div class=codehilite><pre><span></span><span class=kn>import</span> <span class=nn>tensorflow</span> <span class=kn>as</span> <span class=nn>tf</span>
 </pre></div> </td></tr></table> <h3 id=adding-line-numbers>Adding line numbers<a class=headerlink href=#adding-line-numbers title="Permanent link">&para;</a></h3> <p>Line numbers can be added by enabling the <code>linenums</code> flag in your <code>mkdocs.yml</code>:</p> <table class=codehilitetable><tr><td class=linenos><div class=linenodiv><pre><span></span>1
 2
-3</pre></div></td><td class=code><div class=codehilite><pre><span></span><span class="l l-Scalar l-Scalar-Plain">markdown_extensions</span><span class="p p-Indicator">:</span>
-  <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">codehilite</span><span class="p p-Indicator">:</span>
-      <span class="l l-Scalar l-Scalar-Plain">linenums</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">true</span>
+3</pre></div></td><td class=code><div class=codehilite><pre><span></span><span class=nt>markdown_extensions</span><span class=p>:</span>
+  <span class="p p-Indicator">-</span> <span class=nt>codehilite</span><span class=p>:</span>
+      <span class=nt>linenums</span><span class=p>:</span> <span class="l l-Scalar l-Scalar-Plain">true</span>
 </pre></div> </td></tr></table> <p>Example:</p> <table class=codehilitetable><tr><td class=linenos><div class=linenodiv><pre><span></span>1
 2
 3
@@ -43,7 +43,7 @@ def bubble_sort(items):
 <span class=k>def</span> <span class=nf>bubble_sort</span><span class=p>(</span><span class=n>items</span><span class=p>):</span>
     <span class=k>for</span> <span class=n>i</span> <span class=ow>in</span> <span class=nb>range</span><span class=p>(</span><span class=nb>len</span><span class=p>(</span><span class=n>items</span><span class=p>)):</span>
         <span class=k>for</span> <span class=n>j</span> <span class=ow>in</span> <span class=nb>range</span><span class=p>(</span><span class=nb>len</span><span class=p>(</span><span class=n>items</span><span class=p>)</span> <span class=o>-</span> <span class=mi>1</span> <span class=o>-</span> <span class=n>i</span><span class=p>):</span>
-            <span class=k>if</span> <span class=n>items</span><span class=p>[</span><span class=n>j</span><span class=p>]</span> <span class=o>&amp;</span><span class=n>gt</span><span class=p>;</span> <span class=n>items</span><span class=p>[</span><span class=n>j</span> <span class=o>+</span> <span class=mi>1</span><span class=p>]:</span>
+            <span class=k>if</span> <span class=n>items</span><span class=p>[</span><span class=n>j</span><span class=p>]</span> <span class=o>&gt;</span> <span class=n>items</span><span class=p>[</span><span class=n>j</span> <span class=o>+</span> <span class=mi>1</span><span class=p>]:</span>
                 <span class=n>items</span><span class=p>[</span><span class=n>j</span><span class=p>],</span> <span class=n>items</span><span class=p>[</span><span class=n>j</span> <span class=o>+</span> <span class=mi>1</span><span class=p>]</span> <span class=o>=</span> <span class=n>items</span><span class=p>[</span><span class=n>j</span> <span class=o>+</span> <span class=mi>1</span><span class=p>],</span> <span class=n>items</span><span class=p>[</span><span class=n>j</span><span class=p>]</span>
 </pre></div> </td></tr></table> <h3 id=grouping-code-blocks>Grouping code blocks<a class=headerlink href=#grouping-code-blocks title="Permanent link">&para;</a></h3> <p>The <a href=https://facelessuser.github.io/pymdown-extensions/extensions/superfences/ >SuperFences</a> extension which is part of the <a href=https://facelessuser.github.io/pymdown-extensions>PyMdown Extensions</a> package adds support for grouping code blocks with tabs. This is especially useful for documenting projects with multiple language bindings.</p> <p>Example:</p> <table class=codehilitetable><tr><td class=linenos><div class=linenodiv><pre><span></span> 1
  2
@@ -170,7 +170,7 @@ def bubble_sort(items):
 <span class=k>def</span> <span class=nf>bubble_sort</span><span class=p>(</span><span class=n>items</span><span class=p>):</span>
 <span class=hll>    <span class=k>for</span> <span class=n>i</span> <span class=ow>in</span> <span class=nb>range</span><span class=p>(</span><span class=nb>len</span><span class=p>(</span><span class=n>items</span><span class=p>)):</span>
 </span><span class=hll>        <span class=k>for</span> <span class=n>j</span> <span class=ow>in</span> <span class=nb>range</span><span class=p>(</span><span class=nb>len</span><span class=p>(</span><span class=n>items</span><span class=p>)</span> <span class=o>-</span> <span class=mi>1</span> <span class=o>-</span> <span class=n>i</span><span class=p>):</span>
-</span>            <span class=k>if</span> <span class=n>items</span><span class=p>[</span><span class=n>j</span><span class=p>]</span> <span class=o>&amp;</span><span class=n>gt</span><span class=p>;</span> <span class=n>items</span><span class=p>[</span><span class=n>j</span> <span class=o>+</span> <span class=mi>1</span><span class=p>]:</span>
+</span>            <span class=k>if</span> <span class=n>items</span><span class=p>[</span><span class=n>j</span><span class=p>]</span> <span class=o>&gt;</span> <span class=n>items</span><span class=p>[</span><span class=n>j</span> <span class=o>+</span> <span class=mi>1</span><span class=p>]:</span>
                 <span class=n>items</span><span class=p>[</span><span class=n>j</span><span class=p>],</span> <span class=n>items</span><span class=p>[</span><span class=n>j</span> <span class=o>+</span> <span class=mi>1</span><span class=p>]</span> <span class=o>=</span> <span class=n>items</span><span class=p>[</span><span class=n>j</span> <span class=o>+</span> <span class=mi>1</span><span class=p>],</span> <span class=n>items</span><span class=p>[</span><span class=n>j</span><span class=p>]</span>
 </pre></div> </td></tr></table> <h2 id=supported-languages-excerpt>Supported languages <small>excerpt</small><a class=headerlink href=#supported-languages-excerpt title="Permanent link">&para;</a></h2> <p>CodeHilite uses <a href=http://pygments.org>Pygments</a>, a generic syntax highlighter with support for over <a href=http://pygments.org/languages>300 languages</a>, so the following list of examples is just an excerpt.</p> <h3 id=bash>Bash<a class=headerlink href=#bash title="Permanent link">&para;</a></h3> <table class=codehilitetable><tr><td class=linenos><div class=linenodiv><pre><span></span> 1
  2
@@ -558,7 +558,7 @@ def bubble_sort(items):
 <span class=k>RUN</span> bash -c <span class=s1>&#39;echo &quot;firefox&quot; &gt;&gt; /.bashrc&#39;</span>
 
 <span class=k>EXPOSE</span><span class=s> 5900</span>
-<span class=k>CMD</span><span class=s> [&quot;x11vnc&quot;, &quot;-forever&quot;, &quot;-usepw&quot;, &quot;-create&quot;]</span>
+<span class=k>CMD</span> <span class=p>[</span><span class=s2>&quot;x11vnc&quot;</span><span class=p>,</span> <span class=s2>&quot;-forever&quot;</span><span class=p>,</span> <span class=s2>&quot;-usepw&quot;</span><span class=p>,</span> <span class=s2>&quot;-create&quot;</span><span class=p>]</span>
 </pre></div> </td></tr></table> <h3 id=elixir>Elixir<a class=headerlink href=#elixir title="Permanent link">&para;</a></h3> <table class=codehilitetable><tr><td class=linenos><div class=linenodiv><pre><span></span> 1
  2
  3

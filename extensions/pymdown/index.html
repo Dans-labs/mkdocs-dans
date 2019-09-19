@@ -14,25 +14,25 @@
 14
 15
 16
-17</pre></div></td><td class=code><div class=codehilite><pre><span></span><span class="l l-Scalar l-Scalar-Plain">markdown_extensions</span><span class="p p-Indicator">:</span>
+17</pre></div></td><td class=code><div class=codehilite><pre><span></span><span class=nt>markdown_extensions</span><span class=p>:</span>
   <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">pymdownx.arithmatex</span>
-  <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">pymdownx.betterem</span><span class="p p-Indicator">:</span>
-      <span class="l l-Scalar l-Scalar-Plain">smart_enable</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">all</span>
+  <span class="p p-Indicator">-</span> <span class=nt>pymdownx.betterem</span><span class=p>:</span>
+      <span class=nt>smart_enable</span><span class=p>:</span> <span class="l l-Scalar l-Scalar-Plain">all</span>
   <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">pymdownx.caret</span>
   <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">pymdownx.critic</span>
   <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">pymdownx.details</span>
-  <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">pymdownx.emoji</span><span class="p p-Indicator">:</span>
-      <span class="l l-Scalar l-Scalar-Plain">emoji_generator</span><span class="p p-Indicator">:</span> <span class=kt>!!python/name:pymdownx.emoji.to_svg</span>
+  <span class="p p-Indicator">-</span> <span class=nt>pymdownx.emoji</span><span class=p>:</span>
+      <span class=nt>emoji_generator</span><span class=p>:</span> <span class=kt>!!python/name:pymdownx.emoji.to_svg</span>
   <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">pymdownx.inlinehilite</span>
   <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">pymdownx.magiclink</span>
   <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">pymdownx.mark</span>
   <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">pymdownx.smartsymbols</span>
   <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">pymdownx.superfences</span>
-  <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">pymdownx.tasklist</span><span class="p p-Indicator">:</span>
-      <span class="l l-Scalar l-Scalar-Plain">custom_checkbox</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">true</span>
+  <span class="p p-Indicator">-</span> <span class=nt>pymdownx.tasklist</span><span class=p>:</span>
+      <span class=nt>custom_checkbox</span><span class=p>:</span> <span class="l l-Scalar l-Scalar-Plain">true</span>
   <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">pymdownx.tilde</span>
 </pre></div> </td></tr></table> <h2 id=usage>Usage<a class=headerlink href=#usage title="Permanent link">&para;</a></h2> <h3 id=arithmatex-mathjax>Arithmatex <small>MathJax</small><a class=headerlink href=#arithmatex-mathjax title="Permanent link">&para;</a></h3> <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML"></script> <p><a href=https://facelessuser.github.io/pymdown-extensions/extensions/arithmatex/ >Arithmatex</a> integrates Material with <a href=https://www.mathjax.org/ >MathJax</a> which parses block-style and inline equations written in TeX markup and outputs them in mathematical notation. See <a href=http://meta.math.stackexchange.com/questions/5020/ >this thread</a> for a short introduction and quick reference on how to write equations in TeX syntax.</p> <p>Besides activating the extension in the <code>mkdocs.yml</code>, the MathJax JavaScript runtime needs to be included. This must be done with <a href=../../customization/#additional-javascript>additional JavaScript</a>:</p> <table class=codehilitetable><tr><td class=linenos><div class=linenodiv><pre><span></span>1
-2</pre></div></td><td class=code><div class=codehilite><pre><span></span><span class="l l-Scalar l-Scalar-Plain">extra_javascript</span><span class="p p-Indicator">:</span>
+2</pre></div></td><td class=code><div class=codehilite><pre><span></span><span class=nt>extra_javascript</span><span class=p>:</span>
   <span class="p p-Indicator">-</span> <span class=s>&#39;https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML&#39;</span>
 </pre></div> </td></tr></table> <p>If you want to override the default MathJax configuration, you can do this by adding another JavaScript file <strong>before</strong> the MathJax runtime in <code>extra_javascript</code> which contains your MathJax configuration, e.g.:</p> <table class=codehilitetable><tr><td class=linenos><div class=linenodiv><pre><span></span> 1
  2
@@ -75,7 +75,7 @@
 <span class=p>};</span>
 </pre></div> </td></tr></table> <p>In your <code>mkdocs.yml</code>, include it with:</p> <table class=codehilitetable><tr><td class=linenos><div class=linenodiv><pre><span></span>1
 2
-3</pre></div></td><td class=code><div class=codehilite><pre><span></span><span class="l l-Scalar l-Scalar-Plain">extra_javascript</span><span class="p p-Indicator">:</span>
+3</pre></div></td><td class=code><div class=codehilite><pre><span></span><span class=nt>extra_javascript</span><span class=p>:</span>
   <span class="p p-Indicator">-</span> <span class=s>&#39;javascripts/extra.js&#39;</span>
   <span class="p p-Indicator">-</span> <span class=s>&#39;https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML&#39;</span>
 </pre></div> </td></tr></table> <h4 id=blocks>Blocks<a class=headerlink href=#blocks title="Permanent link">&para;</a></h4> <p>Blocks are enclosed in <code class=codehilite><span class=sb>$$</span><span class=nb>...</span><span class=s>$$</span></code> which are placed on separate lines.</p> <p>Example:</p> <table class=codehilitetable><tr><td class=linenos><div class=linenodiv><pre><span></span>1
