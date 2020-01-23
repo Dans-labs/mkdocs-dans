@@ -33,6 +33,7 @@ pip3 install mkdocs
 pip3 install pygments
 pip3 install pymdown-extensions
 pip3 install pyyaml
+pip3 install mkdocs-markdownextradata-plugin
 ```
 
 Basic familiarity with the
